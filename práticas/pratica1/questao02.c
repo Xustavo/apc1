@@ -8,10 +8,10 @@ int main(){
   int altura = 0;
 
   printf("informe a base: ");
-  scanf("%i", &base);
+  int scanner2 = scanf("%i", &base);
 
   printf("informe a altura: ");
-  scanf("%i", &altura);
+  int scanner = scanf("%i", &altura);
 
   if(base < 0 || altura < 0){
     printf("Inválido\n");
@@ -20,7 +20,11 @@ int main(){
   int area = base*altura / 2;
 
   printf("A área do triângulo é: %i\n", area);
+
+
   }
+
+
   
   return 0;
 }
