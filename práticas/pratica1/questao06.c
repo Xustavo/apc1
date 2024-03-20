@@ -25,21 +25,17 @@ int main(){
   int scanner3 = scanf("%i", &c);
 
   //Printando a equação
-  if(c < 0){
+  if(a == 1){
 
-    printf("A equação é: %ix² + %ix -%i = 0\n", a, b, c);
-  }else if(c == 0){
-
-    printf("A equação é: %ix² + %ix = 0\n", a, b);
-  }else if(a == 1){
+    printf("A equação é: x² %+ix %+i = 0\n", b, c);
     
-    printf("A equação é: x² + %ix + %i = 0\n", b, c);
-  }else if(b < 0){
+  }else if(a == -1){
 
-    printf("A equação é: %ix² -%ix + %i = 0\n", a, b, c);
+    printf("A equação é: -x² %+ix %+i = 0\n", b, c);
+    
   }else{
 
-    printf("A equação é: %ix² + %ix + %i = 0\n", a, b, c);
+    printf("A equação é: %+ix² %+ix %+i = 0\n", a, b, c);
   }
 
   //Calculando delta e sua raiz
