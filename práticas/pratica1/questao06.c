@@ -24,7 +24,7 @@ int main(){
   printf("c: ");
   int scanner3 = scanf("%i", &c);
 
-  //Printando a equação
+  //Printando a equação com suas devidas condições
   if(a == 1){
 
     printf("A equação é: x² %+ix %+i = 0\n", b, c);
