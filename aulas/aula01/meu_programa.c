@@ -5,10 +5,10 @@ int main(){
   float nota2 = 0.0;
 
   printf("Informe sua nota1: ");
-  scanf("%f", &nota1);
+  int scanner1 = scanf("%f", &nota1);
 
   printf("Informe sua nota2: ");
-  scanf("%f", &nota2);
+  int scanner2 = scanf("%f", &nota2);
 
   float media = 0.4*nota1 + 0.6*nota2;
 
