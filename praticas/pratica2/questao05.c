@@ -15,8 +15,7 @@ int main(){
   printf("Informe sua altura em m: ");
   int scanner2 = scanf("%f", &altura);
 
-  float altura_quadrado = altura * altura;
-  float imc = peso / altura_quadrado;
+  float imc = peso / (altura * altura);
 
   printf("Seu índice de massa corporal é: %.2f\n", imc);
   

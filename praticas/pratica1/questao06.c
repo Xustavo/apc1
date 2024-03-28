@@ -25,14 +25,18 @@ int main(){
   int scanner3 = scanf("%i", &c);
 
   //Printando a equação com suas devidas condições
-  if(a == 1){
+  if(a == 0){
 
-    printf("A equação é: x² %+ix %+i = 0\n", b, c);
+    printf("Não é equação de segundo grau\n");
+    return 1;
     
   }else if(a == -1){
 
     printf("A equação é: -x² %+ix %+i = 0\n", b, c);
     
+  }else if(a == 1){
+
+    printf("A equação é: x² %+ix %+i = 0\n", b, c);
   }else{
 
     printf("A equação é: %+ix² %+ix %+i = 0\n", a, b, c);
