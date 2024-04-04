@@ -11,18 +11,18 @@ int main(){
   float raiz_quadrada = 0.0;
 
   //Valores de a, b e c
-  int a = 0;
-  int b = 0;
-  int c = 0;
+  float a = 0;
+  float b = 0;
+  float c = 0;
 
   //Pedindo os valores para montar a equação
   printf("Insira os valores para montar a equação de segundo grau:\n");
   printf("a: ");
-  int scanner1 = scanf("%i", &a);
+  int scanner1 = scanf("%f", &a);
   printf("b: ");
-  int scanner2 = scanf("%i", &b);
+  int scanner2 = scanf("%f", &b);
   printf("c: ");
-  int scanner3 = scanf("%i", &c);
+  int scanner3 = scanf("%f", &c);
 
   //Printando a equação com suas devidas condições
   if(a == 0){
@@ -32,14 +32,14 @@ int main(){
     
   }else if(a == -1){
 
-    printf("A equação é: -x² %+ix %+i = 0\n", b, c);
+    printf("A equação é: -x² %+.2fx %+.2f = 0\n", b, c);
     
   }else if(a == 1){
 
-    printf("A equação é: x² %+ix %+i = 0\n", b, c);
+    printf("A equação é: x² %+.2fx %+.2f = 0\n", b, c);
   }else{
 
-    printf("A equação é: %+ix² %+ix %+i = 0\n", a, b, c);
+    printf("A equação é: %+.2fx² %+.2fx %+.2f = 0\n", a, b, c);
   }
 
   //Calculando delta e sua raiz
